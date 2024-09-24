@@ -28,7 +28,11 @@ function createGrid(sz = 16) {
 
 resetBtn.addEventListener("click", () => {
   let val = parseInt(prompt("Enter a size between 1 to 100"));
-  if (val < 0 || val > 100) {
+  //   console.log(parseInt(val));
+  if (isNaN(val)) {
+    container.innerHTML = "";
+    createGrid();
+  } else if (val < 0 || val > 100) {
     alert("Out of Bounds!!");
   } else {
     container.innerHTML = "";

@@ -3,17 +3,23 @@ body {
   font-family: Roboto;
 }
 
+.content {
+  display: flex;
+  justify-content: baseline;
+}
+
 .container {
+  flex-basis: 80%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1260px;
-  height: 1260px;
+  max-width: 960px;
+  height: 960px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
-  padding: 5px;
+  /* margin-top: 50px; */
+  /* padding: 5px; */
   background-color: white;
   border: 0px solid white;
 }
@@ -29,21 +35,34 @@ body {
   background-color: lightblue;
 }
 
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  color: beige;
+  align-self: center;
+  margin-top: 32px;
+  margin-bottom: 60px;
+  font-weight: 900;
+}
 button {
-  /* padding: 30px; */
-  margin-top: 60px;
+  /* margin-top: 24px; */
   background-color: #192734;
   color: white;
-  width: 200px;
-  height: 100px;
+  width: 150px;
+  height: 80px;
   font-size: 24px;
   font-weight: 800;
+  border-radius: 8px;
 }
 
 .btn-container {
+  flex-basis: 20%;
   display: flex;
-  justify-content: center;
-  gap: 800px;
+  flex-direction: column;
+  gap: 100px;
+}
+.reset-btn {
+  align-self: baseline;
+  margin-top: 250px;
 }
 
 .color-ch {
